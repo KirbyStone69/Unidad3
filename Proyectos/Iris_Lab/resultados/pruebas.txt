@@ -1,0 +1,25 @@
+test_export_is_reusable_and_contains_real_results (test_core.CoreTests.test_export_is_reusable_and_contains_real_results) ... ok
+test_infinite_and_missing_rejected (test_core.CoreTests.test_infinite_and_missing_rejected) ... ok
+test_invalid_settings_rejected (test_core.CoreTests.test_invalid_settings_rejected) ... ok
+test_local_dataset_and_features (test_core.CoreTests.test_local_dataset_and_features) ... ok
+test_missing_column_rejected (test_core.CoreTests.test_missing_column_rejected) ... ok
+test_parameters_are_applied (test_core.CoreTests.test_parameters_are_applied) ... ok
+test_predict_probabilities_and_bad_measurements (test_core.CoreTests.test_predict_probabilities_and_bad_measurements) ... ok
+test_reproducibility (test_core.CoreTests.test_reproducibility) ... ok
+test_split_and_metrics_belong_to_predictions (test_core.CoreTests.test_split_and_metrics_belong_to_predictions) ... ok
+test_unknown_species_rejected (test_core.CoreTests.test_unknown_species_rejected) ... ok
+test_animations_finish_and_stop_when_disabled (test_gui.GuiTests.test_animations_finish_and_stop_when_disabled) ... ok
+test_charts_and_small_window (test_gui.GuiTests.test_charts_and_small_window) ... ok
+test_invalid_import_preserves_data (test_gui.GuiTests.test_invalid_import_preserves_data) ... ok
+test_navigation_and_filter (test_gui.GuiTests.test_navigation_and_filter) ... ok
+test_new_dataset_invalidates_model (test_gui.GuiTests.test_new_dataset_invalidates_model) ... ok
+test_pages_fit_small_viewport (test_gui.GuiTests.test_pages_fit_small_viewport) ... ok
+test_safe_close_while_training (test_gui.GuiTests.test_safe_close_while_training) ... ok
+test_table_models_sort_numeric_values (test_gui.GuiTests.test_table_models_sort_numeric_values) ... ok
+test_train_predict_and_export (test_gui.GuiTests.test_train_predict_and_export) ... ok
+test_worker_error_restores_controls (test_gui.GuiTests.test_worker_error_restores_controls) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 14.691s
+
+OK

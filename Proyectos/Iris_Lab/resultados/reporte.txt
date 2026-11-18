@@ -1,0 +1,145 @@
+
+FUNDAMENTOS DE MACHINE LEARNING
+Tradicional: datos + reglas -> resultados. ML: ejemplos etiquetados -> modelo.
+Este ejercicio: clasificación supervisada; y_hat = f(X).
+No supervisado: busca grupos. Refuerzo: aprende mediante recompensas.
+
+PASO 01 | CARGA DEL DATASET
+Cada fila es una flor; cada columna, un atributo.
+
+Tamaño de los datos
+150 instancias y 6 columnas.
+
+Primeras cinco filas
+ Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm     Species
+  1            5.1           3.5            1.4           0.2 Iris-setosa
+  2            4.9           3.0            1.4           0.2 Iris-setosa
+  3            4.7           3.2            1.3           0.2 Iris-setosa
+  4            4.6           3.1            1.5           0.2 Iris-setosa
+  5            5.0           3.6            1.4           0.2 Iris-setosa
+
+PASO 02 | REVISIÓN Y PREPARACIÓN DE LOS DATOS
+Validamos columnas, tipos, faltantes, duplicados y medidas positivas.
+
+Valores faltantes
+Id               0
+SepalLengthCm    0
+SepalWidthCm     0
+PetalLengthCm    0
+PetalWidthCm     0
+Species          0
+
+Duplicados de filas completas
+0
+
+Duplicados en medidas y especie (sin Id)
+3
+
+Decisión de preparación
+Conservamos medidas repetidas; el árbol no requiere normalización.
+
+PASO 03 | ANÁLISIS EXPLORATORIO (EDA)
+Revisamos estadísticas, especies y distribuciones.
+
+Estadísticas descriptivas
+       SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
+count     150.000000    150.000000     150.000000    150.000000
+mean        5.843333      3.054000       3.758667      1.198667
+std         0.828066      0.433594       1.764420      0.763161
+min         4.300000      2.000000       1.000000      0.100000
+25%         5.100000      2.800000       1.600000      0.300000
+50%         5.800000      3.000000       4.350000      1.300000
+75%         6.400000      3.300000       5.100000      1.800000
+max         7.900000      4.400000       6.900000      2.500000
+
+Distribución de especies
+Species
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+
+PASO 04 | CARACTERÍSTICAS X Y ETIQUETA y
+X: cuatro medidas (cm). y: Species. Se excluye Id.
+
+Forma de X e y
+X: (150, 4); y: (150,).
+
+Características utilizadas
+SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm
+
+Un ejemplo etiquetado
+X[0] = [5.1, 3.5, 1.4, 0.2] -> y[0] = Iris-setosa
+
+PASO 05 | PARTICIÓN DE LOS DATOS
+70 % entrenamiento y 30 % prueba, con estratificación y semilla fija.
+
+Partición de datos
+Entrenamiento: 105; prueba: 45
+
+Flores de prueba con medidas iguales a alguna de entrenamiento
+2
+
+PASO 06 | ENTRENAMIENTO DEL MODELO
+El árbol aprende con fit(X_train, y_train).
+
+PASO 07 | PREDICCIÓN Y EVALUACIÓN EN PRUEBA
+Comparamos predicciones con etiquetas reales: exactitud, precisión, recall y F1.
+
+Exactitud en entrenamiento
+95.24%
+
+Exactitud en prueba
+95.56%
+
+Referencia: predecir siempre la especie mayoritaria
+33.33%
+
+Reporte de clasificación
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        15
+Iris-versicolor       0.93      0.93      0.93        15
+ Iris-virginica       0.93      0.93      0.93        15
+
+       accuracy                           0.96        45
+      macro avg       0.96      0.96      0.96        45
+   weighted avg       0.96      0.96      0.96        45
+
+
+PASO 08 | INTERPRETACIÓN DE LAS REGLAS
+Guardamos el árbol, sus reglas y la importancia de las características.
+
+PASO 09 | GENERALIZACIÓN: SUBAJUSTE, SOBREAJUSTE Y EQUILIBRIO
+Comparamos profundidades con validación cruzada solo en entrenamiento.
+Subajuste: poca complejidad. Sobreajuste: buen entrenamiento, peor validación.
+
+Diagnóstico por profundidad (validación cruzada en entrenamiento)
+profundidad  exactitud_entrenamiento  exactitud_validacion  desviacion_validacion
+          1                 0.666667              0.666667               0.000000
+          2                 0.957143              0.923810               0.064594
+          3                 0.961905              0.952381               0.030117
+          4                 0.980952              0.923810               0.038095
+          5                 0.983333              0.933333               0.048562
+ Sin límite                 1.000000              0.923810               0.048562
+
+Comparación
+Profundidad 1: validación 66.67%. Sin límite: validación 92.38%.
+
+Interpretación
+Ajusta la complejidad con validación, sin usar prueba para elegir parámetros.
+Si las medidas repetidas son la misma flor, agrúpalas antes de partir.
+
+PASO 10 | USO DEL MODELO Y CONSERVACIÓN DE RESULTADOS
+Predecimos una especie y guardamos los resultados.
+
+Ejemplo de f(X)
+[5.1, 3.5, 1.4, 0.2] -> Iris-setosa
+
+Ecosistema utilizado
+pandas/NumPy: datos; seaborn/Matplotlib: gráficas; scikit-learn: modelo.
+
+Ejercicio para practicar
+Compara profundidad 1 con 3: ¿cómo cambian entrenamiento y validación?
+
+Archivos generados
+/home/kirby/Descargas/kaggle/resultados

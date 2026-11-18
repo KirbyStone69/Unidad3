@@ -1,0 +1,10 @@
+|--- PetalWidthCm <= 0.75
+|   |--- class: Iris-setosa
+|--- PetalWidthCm >  0.75
+|   |--- PetalLengthCm <= 4.75
+|   |   |--- class: Iris-versicolor
+|   |--- PetalLengthCm >  4.75
+|   |   |--- PetalLengthCm <= 5.15
+|   |   |   |--- class: Iris-virginica
+|   |   |--- PetalLengthCm >  5.15
+|   |   |   |--- class: Iris-virginica

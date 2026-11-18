@@ -1,0 +1,79 @@
+REPORTE DEL DATASET
+============================================================
+Archivo: crawler_peliculas/data/peliculas.csv
+Películas (filas): 1000
+Columnas: 14
+URLs únicas: 1000
+URLs repetidas: 0
+Títulos repetidos (posibles remakes): 12
+
+VALORES FALTANTES
+------------------------------------------------------------
+titulo               0  (  0.0%)
+resumen              0  (  0.0%)
+reseña             282  ( 28.2%)
+genero               0  (  0.0%)
+url                  0  (  0.0%)
+anio                 8  (  0.8%)
+director             2  (  0.2%)
+duracion_min         4  (  0.4%)
+nota                31  (  3.1%)
+votos               31  (  3.1%)
+actores             79  (  7.9%)
+imagen               0  (  0.0%)
+reseña_medio       282  ( 28.2%)
+reseña_autor       285  ( 28.5%)
+
+COBERTURA
+------------------------------------------------------------
+Con reseña:              718 (71.8%)
+Con género:             1000
+Con año:                992
+Nota media:             3.55
+Nota mínima/máxima:     1.4 / 4.7
+Votos (media):          821.49
+
+TOP GÉNEROS
+------------------------------------------------------------
+Drama                      372
+Comedia                    238
+Acción                     183
+Aventura                   168
+Suspense                   155
+Romántico                  150
+Fantasía                   141
+Comedia dramática          119
+Terror                     101
+Crimen                      97
+Biopic                      96
+Animación                   86
+Ciencia ficción             86
+Familia                     79
+Histórico                   74
+
+AÑOS
+------------------------------------------------------------
+Rango: 1925 - 2026
+2026                       101
+2012                        44
+2025                        43
+2008                        39
+2011                        39
+2006                        38
+2010                        34
+2004                        33
+2007                        33
+2009                        32
+
+TOP DIRECTORES
+------------------------------------------------------------
+Ridley Scott                10
+Tim Burton                  10
+Martin Scorsese             10
+Christopher Nolan            8
+Steven Spielberg             8
+Pedro Almodóvar              7
+Luc Besson                   6
+Peter Jackson                5
+Francis Lawrence             5
+James Cameron                5

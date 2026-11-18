@@ -1,0 +1,41 @@
+test_export_excludes_incomplete_and_duplicate_rows (test_entrega.DeliveryTests.test_export_excludes_incomplete_and_duplicate_rows) ... ok
+test_cli_rejects_nonfinite_delay (test_regressions.EndToEndTests.test_cli_rejects_nonfinite_delay) ... --delay debe ser finito y no negativo
+ok
+test_cli_unmet_target_is_failure (test_regressions.EndToEndTests.test_cli_unmet_target_is_failure) ... 2026-11-06 20:34:23 | INFO    | Inicio: objetivo=1 peliculas, delay=1.00s, en cola=0
+2026-11-06 20:34:23 | INFO    | Fin: 0 peliculas en CSV | listados=0 | errores=0 | bloqueo=False
+2026-11-06 20:34:23 | INFO    | Resumen: 0 peliculas en /tmp/tmpbhte9d5l/a.csv | errores=0 | bloqueo=False
+2026-11-06 20:34:23 | ERROR   | Objetivo no alcanzado; CSV parcial conservado
+ok
+test_crawl_saves_movie_and_real_link_evidence (test_regressions.EndToEndTests.test_crawl_saves_movie_and_real_link_evidence) ... 2026-11-06 20:34:23 | INFO    | Inicio: objetivo=1 peliculas, delay=1.00s, en cola=1
+2026-11-06 20:34:23 | INFO    | Listado https://www.sensacine.com/peliculas/todas-peliculas/genero-13001/: 1 peliculas, 0 generos, siguiente=no
+2026-11-06 20:34:23 | INFO    | [1] Parthenope (2025) | genero=Drama|Romántico | resena=si
+2026-11-06 20:34:23 | INFO    | Fin: 1 peliculas en CSV | listados=1 | errores=0 | bloqueo=False
+ok
+test_429_stops_without_hammering (test_regressions.RegressionTests.test_429_stops_without_hammering) ... ok
+test_complete_resume_never_uses_network (test_regressions.RegressionTests.test_complete_resume_never_uses_network) ... 2026-11-06 20:34:23 | INFO    | Inicio: objetivo=1 peliculas, delay=1.00s, en cola=0
+2026-11-06 20:34:23 | INFO    | Fin: 1 peliculas en CSV | listados=0 | errores=0 | bloqueo=False
+ok
+test_external_genre_rejected (test_regressions.RegressionTests.test_external_genre_rejected) ... ok
+test_external_movie_link_is_rejected (test_regressions.RegressionTests.test_external_movie_link_is_rejected) ... ok
+test_plain_403_stops (test_regressions.RegressionTests.test_plain_403_stops) ... ok
+test_real_similar_cards_only (test_regressions.RegressionTests.test_real_similar_cards_only) ... ok
+test_review_block_propagates (test_regressions.RegressionTests.test_review_block_propagates) ... ok
+test_review_duplicates_removed (test_regressions.RegressionTests.test_review_duplicates_removed) ... ok
+test_robots_unavailable_fails_closed (test_regressions.RegressionTests.test_robots_unavailable_fails_closed) ... ok
+test_unrelated_header_is_not_similar (test_regressions.RegressionTests.test_unrelated_header_is_not_similar) ... ok
+test_genre_page (test_scraper.TestListingParser.test_genre_page) ... ok
+test_second_page_uses_next_button (test_scraper.TestListingParser.test_second_page_uses_next_button) ... ok
+test_extra_fields (test_scraper.TestMovieParser.test_extra_fields) ... ok
+test_required_fields (test_scraper.TestMovieParser.test_required_fields) ... ok
+test_review_and_similar_links (test_scraper.TestMovieParser.test_review_and_similar_links) ... ok
+test_first_press_review (test_scraper.TestReviewParser.test_first_press_review) ... ok
+test_canonical (test_scraper.TestUrls.test_canonical) ... ok
+test_movie_id (test_scraper.TestUrls.test_movie_id) ... ok
+test_add_dedupe_and_resume (test_storage.TestStorage.test_add_dedupe_and_resume) ... 2026-11-06 20:34:23 | INFO    | CSV existente: 1 peliculas ya guardadas
+ok
+test_merge_normalizes_and_dedupes (test_unir_csvs.TestMergeCsvs.test_merge_normalizes_and_dedupes) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.455s
+
+OK

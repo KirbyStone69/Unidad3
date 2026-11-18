@@ -1,0 +1,27 @@
+
+# Configuración privada y dependencias locales
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+entorno/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+# Archivos temporales de editores y LaTeX
+.~lock.*
+*.aux
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*-SAVE-ERROR
+*.tsbuildinfo

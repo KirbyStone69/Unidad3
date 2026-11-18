@@ -1,0 +1,150 @@
+{
+  "fecha_utc": "2026-11-07T02:33:41.768722+00:00",
+  "metodo": "12 filas equidistantes del CSV de entrega; comparación literal con HTML descargado. No valida la veracidad editorial de la fuente.",
+  "muestra": [
+    {
+      "fila_entrega": 1,
+      "titulo": "En el corazón de la bestia",
+      "url": "https://www.sensacine.com/peliculas/pelicula-1000000085/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-1000000085/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-1000000085/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 0,
+      "estado_similares": "HTTP 301 en https://www.sensacine.com/peliculas/pelicula-1000000085/similares/",
+      "sha256_html": "c911e8c4308b4fd7aeced9d747029b2e6ff6df3217754f94191ffed031e1c8f9",
+      "sha256_html_reseña": "d8939ac07fb26243f9f3fd178ac21af3b658113ca93a4210fa3149445403606e"
+    },
+    {
+      "fila_entrega": 66,
+      "titulo": "La Duquesa",
+      "url": "https://www.sensacine.com/peliculas/pelicula-130305/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-130305/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-130305/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "142dfb20c9e56345b59c24179e9d6f31c6ec4ba1b7c7a8ada1b6ea25fc012618",
+      "sha256_html_reseña": "0b6829b7605e1c46e80a9dcf8855824d1607253e14d24720d82c2dc0201f7e35"
+    },
+    {
+      "fila_entrega": 131,
+      "titulo": "Hombre lobo",
+      "url": "https://www.sensacine.com/peliculas/pelicula-194952/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-194952/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-194952/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "e7bbd813bf23d1e36f71e52c5179924c559ba3f2d0530f76c8a062f89eccf078",
+      "sha256_html_reseña": "92ef6e87c6f60b9ba0705710b64e5a74b8bde8f1b35a5846dc2ec9b8a146c1dc"
+    },
+    {
+      "fila_entrega": 197,
+      "titulo": "Ceniza en la boca",
+      "url": "https://www.sensacine.com/peliculas/pelicula-1000020045/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-1000020045/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-1000020045/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 0,
+      "estado_similares": "HTTP 301 en https://www.sensacine.com/peliculas/pelicula-1000020045/similares/",
+      "sha256_html": "18c4026972d275e36c074730f6c6ee12e7fd82772f8d3e48590fe61d2381a2f7",
+      "sha256_html_reseña": "c88c2dd3f7bda90317a58852a400130d24a34aa17199488ee428c94a88009148"
+    },
+    {
+      "fila_entrega": 262,
+      "titulo": "Spirit: El corcel indomable",
+      "url": "https://www.sensacine.com/peliculas/pelicula-42151/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-42151/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-42151/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "898e43dd21af9a867a447c5fb563b584eb7ee3c9a2748a90bfdf3ac623a46cdb",
+      "sha256_html_reseña": "399661decd62f22a85722b6c89747139078af19aa6c5d3326925e9b89f9fc9a0"
+    },
+    {
+      "fila_entrega": 327,
+      "titulo": "Infiltrados en la universidad",
+      "url": "https://www.sensacine.com/peliculas/pelicula-204121/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-204121/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-204121/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "8668e1c1204670790b5d37b1283d18e717dab4c70146f3433ebdf7d09282fc41",
+      "sha256_html_reseña": "ad7c3bf245ede04a7f7cf4c1a2be0a4424125497087193f7aa30de2ec3001656"
+    },
+    {
+      "fila_entrega": 392,
+      "titulo": "War Horse (Caballo de batalla)",
+      "url": "https://www.sensacine.com/peliculas/pelicula-176676/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-176676/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-176676/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "18c7eab8cb64ad24afa1f70f2eef8857567661a5b8a789edcf2f321303893b48",
+      "sha256_html_reseña": "c49fc7a36a01ccc3598d631797dc81807f327ba0bf1b53a17ef5c3c443b1f2fa"
+    },
+    {
+      "fila_entrega": 457,
+      "titulo": "Babylon",
+      "url": "https://www.sensacine.com/peliculas/pelicula-50127/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-50127/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-50127/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "29a94cf01883c12c0c26c77c4eb044c765ca6160e0078f1322272a506358a43a",
+      "sha256_html_reseña": "af48984392f48be11013ce81181b7953c183acf84746329ce63556eb81b3d715"
+    },
+    {
+      "fila_entrega": 522,
+      "titulo": "La Bella y la Bestia",
+      "url": "https://www.sensacine.com/peliculas/pelicula-7229/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-7229/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-7229/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "2fb22bbdaa4adf152590cc5d35840474920918fd40118441bf7baad91d75a36a",
+      "sha256_html_reseña": "ca36b82d420f17b6b89673f67ec57a92e2681a1653e7742fe3c3733254233d60"
+    },
+    {
+      "fila_entrega": 588,
+      "titulo": "American History X",
+      "url": "https://www.sensacine.com/peliculas/pelicula-12475/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-12475/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-12475/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "642bbd7f865db7debe6534c3fc26f50b9f1f0ba4601f877e800d316a5b705d56",
+      "sha256_html_reseña": "ee99725a5fe206171b9e42c726a173afe9f35b49faebbb5c35f2e8232cf9a13a"
+    },
+    {
+      "fila_entrega": 653,
+      "titulo": "Calle Málaga",
+      "url": "https://www.sensacine.com/peliculas/pelicula-1000020088/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-1000020088/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-1000020088/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 0,
+      "estado_similares": "HTTP 301 en https://www.sensacine.com/peliculas/pelicula-1000020088/similares/",
+      "sha256_html": "09deefbb561026125b910306acd4a581fdbd0aeaabe86ed5656e5616ee4dbe36",
+      "sha256_html_reseña": "0ac65b7d610a6363f93a68e886e9664f4adbed7c8a406eab277fdb8082970fd9"
+    },
+    {
+      "fila_entrega": 718,
+      "titulo": "Underworld: El despertar",
+      "url": "https://www.sensacine.com/peliculas/pelicula-171098/",
+      "url_reseña": "https://www.sensacine.com/peliculas/pelicula-171098/criticas-prensa/",
+      "url_similares": "https://www.sensacine.com/peliculas/pelicula-171098/similares/",
+      "campos_diferentes": [],
+      "similares_encontradas": 20,
+      "estado_similares": "OK",
+      "sha256_html": "08b8e6faaf6c9383c5bb63aa5f715cc36b00eb4f82bedcee4ed91127af8eae0c",
+      "sha256_html_reseña": "f39c320eaaa537551e65cb02afeb8989d881af417b95772c52f970360ad07fb4"
+    }
+  ]
+}
