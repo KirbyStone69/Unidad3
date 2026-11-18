@@ -1,3 +1,3 @@
-# Unidad 3
+# Organización de Unidad3
 
-Consulta el [índice de la unidad](README.md) para localizar proyectos, prácticas y materiales.
+Consulta el [índice actualizado de actividades](README.md).

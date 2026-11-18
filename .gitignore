@@ -25,3 +25,8 @@ __pycache__/
 *.synctex.gz
 *-SAVE-ERROR
 *.tsbuildinfo
+
+# FHCP: conservar únicamente la copia ligera
+/02_FHCP_Challenge/data/raw/FHCPCS*/
+/02_FHCP_Challenge/experiments/results/
+/02_FHCP_Challenge/.tools/
