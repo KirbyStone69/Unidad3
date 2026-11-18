@@ -2,6 +2,7 @@
 import argparse
 import csv
 import math
+import random
 from collections import Counter
 from pathlib import Path
 
@@ -36,7 +37,7 @@ def clasificar(datos, largo, ancho, k):
 
 def crear_ventana():
     import matplotlib.pyplot as plt
-    from matplotlib.widgets import Slider
+    from matplotlib.widgets import Slider, Button
 
     datos = cargar_iris()
     fig = plt.figure(figsize=(11, 7), facecolor='#fafaf7')
@@ -46,12 +47,15 @@ def crear_ventana():
     fig.text(.09, .915, 'Cada nodo es una flor. La estrella es la flor que quieres clasificar.', fontsize=10)
     resumen = fig.text(.71, .83, '', va='top', fontsize=11, linespacing=1.6)
     detalle = fig.text(.71, .57, '', va='top', fontsize=10, linespacing=1.5)
+    inicial = (random.randint(10, 69) / 10, random.randint(1, 25) / 10)
     controles = [
-        Slider(fig.add_axes([.25, .24, .38, .035]), 'Largo pétalo (cm)', .1, 7.5, valinit=3.3, valstep=.1),
-        Slider(fig.add_axes([.25, .17, .38, .035]), 'Ancho pétalo (cm)', .1, 3.0, valinit=1.7, valstep=.1),
+        Slider(fig.add_axes([.25, .24, .38, .035]), 'Largo pétalo (cm)', .1, 7.5, valinit=inicial[0], valstep=.1),
+        Slider(fig.add_axes([.25, .17, .38, .035]), 'Ancho pétalo (cm)', .1, 3.0, valinit=inicial[1], valstep=.1),
         Slider(fig.add_axes([.25, .10, .38, .035]), 'Vecinos K', 1, 15, valinit=5, valstep=1, valfmt='%0.0f'),
     ]
-    fig.text(.09, .035, '1. Mueve las medidas.   2. Elige K.   3. Observa qué especie obtiene más votos.', fontsize=10)
+    boton = Button(fig.add_axes([.73, .10, .22, .065]), 'Punto aleatorio',
+                   color='#e3edf5', hovercolor='#c5dfef')
+    fig.text(.09, .035, 'Mueve las medidas o K: cambia al instante. Usa el botón para generar otra flor.', fontsize=10)
 
     def actualizar(_=None):
         x, y, k = controles[0].val, controles[1].val, int(controles[2].val)
@@ -85,11 +89,25 @@ def crear_ventana():
         detalle.set_text('\n'.join(filas))
         fig.canvas.draw_idle()
 
+    def generar_punto(_):
+        # Actualizar las dos coordenadas juntas y recalcular una sola vez.
+        anterior = tuple(round(c.val, 1) for c in controles[:2])
+        nuevo = anterior
+        while nuevo == anterior:
+            nuevo = (random.randint(10, 69) / 10, random.randint(1, 25) / 10)
+        for control, valor in zip(controles[:2], nuevo):
+            control.eventson = False
+            control.set_val(valor)
+            control.eventson = True
+        actualizar()
+
+    boton.on_clicked(generar_punto)
     for control in controles:
         control.on_changed(actualizar)
     actualizar()
     # Mantener vivos los controles y permitir explorar la ventana interactivamente.
     fig.controles_knn = controles
+    fig.boton_aleatorio = boton
     return fig
 
 

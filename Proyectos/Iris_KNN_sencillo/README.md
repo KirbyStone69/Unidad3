@@ -14,9 +14,14 @@ El iniciador usa el entorno propio si existe o reutiliza el entorno de Iris Lab 
 
 ## Cómo usarlo
 
-1. Mueve **Largo pétalo** y **Ancho pétalo** para cambiar la estrella.
+La estrella se genera aleatoriamente al abrir la aplicación.
+
+1. Mueve **Largo pétalo** y **Ancho pétalo** para cambiar la estrella en tiempo real.
 2. Cambia **Vecinos K**, entre 1 y 15.
-3. Observa las conexiones, los votos de las tres especies y la predicción.
+3. Pulsa **Punto aleatorio** para generar otra flor y actualizar todas las conexiones y votos, conservando K.
+4. Observa la predicción al instante.
+
+Los puntos aleatorios son combinaciones sintéticas dentro del rango de medidas de Iris (largo de 1.0 a 6.9 cm; ancho de 0.1 a 2.5 cm), no flores tomadas del CSV.
 
 Puedes probar estas medidas con K = 5:
 
